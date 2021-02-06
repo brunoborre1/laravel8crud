@@ -1,6 +1,5 @@
 @extends('layout.plantillabase');
 
-
 @section('contenido')
 <h2>CREAR REGISTROS</h2>
 
