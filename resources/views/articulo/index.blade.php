@@ -19,18 +19,20 @@
             <th scope="col">Acciones</th>
         </tr>
     </thead>
-    <tbody>      
+    <tbody>
+            @foreach($articulos as $articulo)      
             <tr>
-                <td>{{$articulo-id}}</td>
-                <td>{{$articulo-codigo}}</td>
-                <td>{{$articulo-descripcion}}</td>
-                <td>{{$articulo-cantidad}}</td>
-                <td>{{$articulo-precio}}</td>
+                <td>{{$articulo->id}}</td>
+                <td>{{$articulo->codigo}}</td>
+                <td>{{$articulo->descripcion}}</td>
+                <td>{{$articulo->cantidad}}</td>
+                <td>{{$articulo->precio}}</td>
                 <td>
                     <a class="btn btn-info">Editar</a>
                     <button class="btn btn-danger">Borrar</button>               
                 </td>
-            </tr>      
+            </tr>    
+            @endoforeach  
     </tbody>
 </table>
 
